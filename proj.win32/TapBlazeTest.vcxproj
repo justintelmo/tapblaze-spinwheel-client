@@ -1,0 +1,895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F927D91C-ECD0-3306-8EF6-4B9E9D58C5D8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>TapBlazeTest</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\bin\TapBlazeTest\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TapBlazeTest.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">TapBlazeTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\bin\TapBlazeTest\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TapBlazeTest.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">TapBlazeTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\bin\TapBlazeTest\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">TapBlazeTest.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">TapBlazeTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\bin\TapBlazeTest\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">TapBlazeTest.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">TapBlazeTest</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/Box2D/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/chipmunk/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include/bullet" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/jpeg/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/webp/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/png/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/glfw3/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/prebuilt/win32/uv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Development/Projects/TapBlazeTest/proj.win32/Debug/TapBlazeTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Debug/TapBlazeTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/Box2D/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/chipmunk/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include/bullet" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/jpeg/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/webp/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/png/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/glfw3/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/prebuilt/win32/uv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\Release\cocos2d.lib;lib\Release\external.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Release\ext_recast.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\Release\ext_tinyxml2.lib;lib\Release\ext_xxhash.lib;lib\Release\ext_xxtea.lib;lib\Release\ext_clipper.lib;lib\Release\ext_edtaa3func.lib;lib\Release\ext_convertUTF.lib;lib\Release\ext_poly2tri.lib;lib\Release\ext_md5.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Release\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Development/Projects/TapBlazeTest/proj.win32/Release/TapBlazeTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/Release/TapBlazeTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/Box2D/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/chipmunk/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include/bullet" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/jpeg/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/webp/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/png/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/glfw3/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/prebuilt/win32/uv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\MinSizeRel\cocos2d.lib;lib\MinSizeRel\external.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\MinSizeRel\ext_recast.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\MinSizeRel\ext_tinyxml2.lib;lib\MinSizeRel\ext_xxhash.lib;lib\MinSizeRel\ext_xxtea.lib;lib\MinSizeRel\ext_clipper.lib;lib\MinSizeRel\ext_edtaa3func.lib;lib\MinSizeRel\ext_convertUTF.lib;lib\MinSizeRel\ext_poly2tri.lib;lib\MinSizeRel\ext_md5.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\MinSizeRel\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Development/Projects/TapBlazeTest/proj.win32/MinSizeRel/TapBlazeTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/MinSizeRel/TapBlazeTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/Box2D/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/chipmunk/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/freetype2/include/win32/freetype2" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/bullet/include/bullet" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/jpeg/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/webp/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/png/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/glfw3/include/win32" /external:I "G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>G:\Development\Projects\TapBlazeTest\Classes;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\audio\include;G:\Development\Projects\TapBlazeTest\cocos2d;G:\Development\Projects\TapBlazeTest\cocos2d\cocos;G:\Development\Projects\TapBlazeTest\cocos2d\extensions;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\editor-support;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\base;G:\Development\Projects\TapBlazeTest\cocos2d\cocos\platform\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\recast\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\tinyxml2\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxhash\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\xxtea\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\clipper\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\edtaa3func\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\poly2tri\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\md5\..;G:\Development\Projects\TapBlazeTest\cocos2d\external\unzip\.;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\include\win32\freetype2;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\include\bullet;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\include\OGLES;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\include;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\include\win32;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>												</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libssl-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libssl-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/openssl/prebuilt/win32/libcrypto-1_1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libcrypto-1_1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/uv/prebuilt/win32/uv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/uv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/websockets/prebuilt/win32/websockets.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/websockets.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/curl/prebuilt/win32/libcurl.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libcurl.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/gles/prebuilt/glew32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/glew32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/icon/prebuilt/iconv.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/iconv.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/MP3Decoder/prebuilt/libmpg123.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libmpg123.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libogg.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libogg.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbis.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libvorbis.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OggDecoder/prebuilt/libvorbisfile.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/libvorbisfile.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/win32-specific/OpenalSoft/prebuilt/OpenAL32.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/OpenAL32.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different G:/Development/Projects/TapBlazeTest/cocos2d/external/zlib/../win32-specific/zlib/prebuilt/zlib1.dll G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/zlib1.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>lib\RelWithDebInfo\cocos2d.lib;lib\RelWithDebInfo\external.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\Box2D\prebuilt\win32\release\libbox2d.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\chipmunk\prebuilt\win32\release-lib\libchipmunk.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\RelWithDebInfo\ext_recast.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\bullet\prebuilt\win32\release\libbullet.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\webp\prebuilt\win32\libwebp.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\websockets\prebuilt\win32\websockets.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libssl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\uv\prebuilt\win32\uv_a.lib;lib\RelWithDebInfo\ext_tinyxml2.lib;lib\RelWithDebInfo\ext_xxhash.lib;lib\RelWithDebInfo\ext_xxtea.lib;lib\RelWithDebInfo\ext_clipper.lib;lib\RelWithDebInfo\ext_edtaa3func.lib;lib\RelWithDebInfo\ext_convertUTF.lib;lib\RelWithDebInfo\ext_poly2tri.lib;lib\RelWithDebInfo\ext_md5.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\curl\prebuilt\win32\libcurl.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\png\prebuilt\win32\libpng.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;G:\Development\Projects\TapBlazeTest\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\RelWithDebInfo\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>G:/Development/Projects/TapBlazeTest/proj.win32/RelWithDebInfo/TapBlazeTest.lib</ImportLibrary>
+      <ProgramDataBaseFile>G:/Development/Projects/TapBlazeTest/proj.win32/bin/TapBlazeTest/RelWithDebInfo/TapBlazeTest.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Development\Projects\TapBlazeTest\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule G:/Development/Projects/TapBlazeTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Development/Projects/TapBlazeTest -BG:/Development/Projects/TapBlazeTest/proj.win32 --check-stamp-file G:/Development/Projects/TapBlazeTest/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule G:/Development/Projects/TapBlazeTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Development/Projects/TapBlazeTest -BG:/Development/Projects/TapBlazeTest/proj.win32 --check-stamp-file G:/Development/Projects/TapBlazeTest/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule G:/Development/Projects/TapBlazeTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Development/Projects/TapBlazeTest -BG:/Development/Projects/TapBlazeTest/proj.win32 --check-stamp-file G:/Development/Projects/TapBlazeTest/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule G:/Development/Projects/TapBlazeTest/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Development/Projects/TapBlazeTest -BG:/Development/Projects/TapBlazeTest/proj.win32 --check-stamp-file G:/Development/Projects/TapBlazeTest/proj.win32/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeParseArguments.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.25\Modules\Platform\WindowsPaths.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosBuildSet.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDefine.cmake;G:\Development\Projects\TapBlazeTest\cocos2d\cmake\Modules\CocosConfigDepend.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeCXXCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeRCCompiler.cmake;G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\3.25.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\AppDelegate.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\MainScene.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\ItemData.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\RewardItem.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Wheel.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\WheelItem.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\PlayButton.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\ClaimButton.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\proj.win32\main.h" />
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\proj.win32\resource.h" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\AppDelegate.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\MainScene.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\ItemData.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\RewardItem.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Wheel.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\WheelItem.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\PlayButton.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\ClaimButton.cpp" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\proj.win32\main.cpp" />
+    <ResourceCompile Include="G:\Development\Projects\TapBlazeTest\proj.win32\game.rc" />
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\cocos2d\cocos\precheader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{14CDE7B4-6DAF-3607-B93B-2DA6B105AB66}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\SYNC_RESOURCE-TapBlazeTest.vcxproj">
+      <Project>{05872B5A-D331-3B51-881A-108962D0AAF6}</Project>
+      <Name>SYNC_RESOURCE-TapBlazeTest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{F3F3F7FB-F8BE-3517-8872-CF9EB713DEAD}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{5986263E-E82E-3FB5-9E51-810957C8A7F9}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{47AC0FAA-E290-36C5-8CA7-2E2929A6CABA}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{33864A78-0388-3227-86D9-AB414DCDA018}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{F6F68970-B881-377F-904C-906577DC1EB5}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{934EB4E6-56D2-3E05-B881-D568A44EB97C}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{EEB24BCD-6182-30D8-BEF5-34637BDD6286}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{15FEBBA3-11C7-38EF-85C1-2E89752D45EC}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{105E0B20-29E7-3E4C-A5CC-9EE28A0ADC9C}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{97B572DE-1C30-361B-919F-1759680AB58F}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{15E262E0-EA5B-3780-8425-B6A48F282FAC}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Development\Projects\TapBlazeTest\proj.win32\engine\external\external.vcxproj">
+      <Project>{1A7641E1-A29A-3996-928D-35BA701DDF4C}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

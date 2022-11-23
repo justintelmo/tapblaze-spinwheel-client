@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\MainScene.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\ItemData.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\RewardItem.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Wheel.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\WheelItem.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\PlayButton.cpp">
+      <Filter>Source Files\Classes\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\ClaimButton.cpp">
+      <Filter>Source Files\Classes\Buttons</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\cocos2d\cocos\precheader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\MainScene.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\ItemData.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\RewardItem.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Wheel.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\WheelItem.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\PlayButton.h">
+      <Filter>Source Files\Classes\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\Classes\Buttons\ClaimButton.h">
+      <Filter>Source Files\Classes\Buttons</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="G:\Development\Projects\TapBlazeTest\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Development\Projects\TapBlazeTest\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="G:\Development\Projects\TapBlazeTest\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5E2E8F0F-88EE-3336-92BA-CC225B54D9B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{AB2B862E-45BD-3428-B59C-DA00D3318621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\Buttons">
+      <UniqueIdentifier>{1C713306-A238-33DA-A491-8A058232EC02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{FD014965-3093-34BA-9F64-F6C6BB9F143A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

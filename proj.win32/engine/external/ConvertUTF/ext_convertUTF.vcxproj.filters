@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\ConvertUTF.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\ConvertUTFWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Development\Projects\TapBlazeTest\cocos2d\external\ConvertUTF\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5E2E8F0F-88EE-3336-92BA-CC225B54D9B2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

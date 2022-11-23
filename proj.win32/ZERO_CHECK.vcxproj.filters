@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\Development\Projects\TapBlazeTest\proj.win32\CMakeFiles\bcc081fd40b93cf7a3e0bc03fcef5934\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{77D0598A-7FB5-38FC-AFCA-5CE427B037B7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
